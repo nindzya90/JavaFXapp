@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.SecondPageController">
+    <children>
+        <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-background-color: #0000ff;">
+            <effect>
+                <Bloom />
+            </effect>
+            <children>
+                <Label layoutX="200.0" layoutY="35.0" text="Ramiz Nasirov Java">
+                    <font>
+                        <Font name="Century" size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="CheckTaskButton" layoutX="246.0" layoutY="312.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="209.0" text="Проверить задание" />
+        <Label layoutX="22.0" layoutY="90.0" prefHeight="71.0" prefWidth="656.0" text="2. Задание Составить алгоритм: если введенное имя совпадает с Вячеслав, то вывести “Привет, Вячеслав”, если нет, то вывести &quot;Нет такого имени&quot;">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="CodeInField" layoutX="235.0" layoutY="193.0" text="введите имя">
+            <font>
+                <Font name="Arial Narrow" size="22.0" />
+            </font>
+        </TextField>
+        <TextArea fx:id="CodeOutField" layoutX="78.0" layoutY="245.0" prefHeight="38.0" prefWidth="545.0" />
+        <Button fx:id="NextTask" layoutX="498.0" layoutY="314.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="171.0" text="Следующее задание" />
+    </children>
+</AnchorPane>
